@@ -7,3 +7,12 @@ D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\ob
 D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\obj\Debug\GraphFunction.exe
 D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\obj\Debug\GraphFunction.pdb
 D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Form1.resources
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\bin\Debug\GraphFunction.exe.config
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.exe
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.pdb
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\bin\Debug\GraphFunction.exe
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\bin\Debug\GraphFunction.pdb
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.csprojResolveAssemblyReference.cache
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Form1.resources
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Properties.Resources.resources
+D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.csproj.GenerateResource.Cache

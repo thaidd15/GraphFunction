@@ -29,7 +29,7 @@ namespace GraphFunction
             }
             if (exp.Convert_Infix_To_Postfix() == false)
             {
-                MessageBox.Show("Error. Please try agian!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error. Please try again!", "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             result = exp.Evaluate_Postfix(x);
             return result;

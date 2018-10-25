@@ -93,9 +93,8 @@ namespace GraphFunction
                 return Double.NaN;
             }
 
-
             x = a;
-            S = (exp.Evaluate_Postfix(a) + exp.Evaluate_Postfix(b));
+            S = (exp.Evaluate_Postfix(a) + exp.Evaluate_Postfix(b)) / 2;
             h = (b - a) / n;
             for (int i = 1; i <= n; i++)
             {
