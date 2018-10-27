@@ -16,3 +16,12 @@ D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\Gr
 D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Form1.resources
 D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Properties.Resources.resources
 D:\Study\Study\C# Programing\Project\Windows Form\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.csproj.GenerateResource.Cache
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\bin\Debug\GraphFunction.exe.config
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\bin\Debug\GraphFunction.exe
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\bin\Debug\GraphFunction.pdb
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Form1.resources
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.Properties.Resources.resources
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.csproj.GenerateResource.cache
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.csproj.CoreCompileInputs.cache
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.exe
+C:\Users\Денис сын Олега\Documents\GitHub\GraphFunction\GraphFunction\GraphFunction\obj\Debug\GraphFunction.pdb

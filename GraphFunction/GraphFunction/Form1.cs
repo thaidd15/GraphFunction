@@ -10,18 +10,18 @@ namespace GraphFunction
         {
             InitializeComponent();
         }
+
+        private Random random = new Random();
         private int n, x0, y0, xmax, ymax, min, max, x1, y1, x2, y2;
         private int k = 30;
         private double x, dx, fx1, fx2;
         private string s1, s2;
 
         //Calculate value of function y=f(x) with value x
-        private double f(double x)
+        private double f(double x, string s2)
         {
             double result;
-            //Input text
-            s1 = Inputtxt.Text;
-            s2 = s1.ToLower();
+
             Expression exp = new Expression(s2);
             if (exp.Convert_To_CharArray() == false)
             {
@@ -91,36 +91,71 @@ namespace GraphFunction
         //Draw Graph
         private void DrawGraph()
         {
+            Graph.Controls.Clear();
             Graph.Refresh();
+
             DrawOXY();
             Graphics g = Graph.CreateGraphics();
-            Pen p = new Pen(Color.Blue, 2);
-            x = min;
-            dx = 1.0f / k;
-            fx1 = f(x);
-            x1 = x0 + (int)(x * k);
-            y1 = y0 - (int)(fx1 * k);
-            while (x < max)
+
+            //Input text
+            s1 = Inputtxt.Text;
+            s2 = s1.ToLower();
+
+            string[] graphics = s2.Split('\n');
+
+            for (int i = 0; i < graphics.Length; i++)
             {
-                x += dx;
-                fx2 = f(x);
-                x2 = x0 + (int)(x * k);
-                y2 = y0 - (int)(fx2 * k);
-                try
+                Color color = Color.FromArgb(
+                    (byte)random.Next(0, 256),
+                    (byte)random.Next(0, 256),
+                    (byte)random.Next(0, 256));
+
+                Pen pen = new Pen(color, 2);
+
+                x = min;
+                dx = 1.0f / k;
+                fx1 = f(x, graphics[i]);
+
+                if (!double.IsNaN(fx1))
                 {
-                    if (!((fx1 * fx2 < 0) && (Math.Abs((int)(fx1 - fx2)) > k)))
+                    //add label - function x
+                    Label label = new Label()
                     {
-                        //Draw graph
-                        g.DrawLine(p, x1, y1, x2, y2);
-                    }
+                        Text = graphics[i],
+                        Font = new Font(Font.FontFamily, 18),
+                        ForeColor = color,
+                        Location = new Point(0, 35 * i),
+                        AutoSize = true,
+                    };
+
+                    Graph.Controls.Add(label);
                 }
-                catch (System.Exception ex)
+
+                x1 = x0 + (int)(x * k);
+                y1 = y0 - (int)(fx1 * k);
+                while (x < max)
                 {
-                    Console.WriteLine(ex);
+                    x += dx;
+                    fx2 = f(x, graphics[i]);
+                    x2 = x0 + (int)(x * k);
+                    y2 = y0 - (int)(fx2 * k);
+                    try
+                    {
+                        if (!((fx1 * fx2 < 0) && (Math.Abs((int)(fx1 - fx2)) > k)))
+                        {
+                            //Draw graph
+                            g.DrawLine(pen, x1, y1, x2, y2);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex);
+                    }
+
+                    x1 = x2;
+                    y1 = y2;
+                    fx1 = fx2;
                 }
-                x1 = x2;
-                y1 = y2;
-                fx1 = fx2;
             }
         }
 
